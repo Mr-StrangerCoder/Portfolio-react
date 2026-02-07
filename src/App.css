@@ -1,5 +1,8 @@
-body{
-    background-image: url(./assets/backgadound.jpg);
+
+
+.about {
+    background-image: url(./assets/about.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+
 }

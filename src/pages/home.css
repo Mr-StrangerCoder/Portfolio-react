@@ -1,0 +1,36 @@
+.home {
+    background-image: url(/src/assets/home.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.home h1 {
+    font-size: 4rem;
+
+}
+
+.gradient-text {
+    background: linear-gradient(90deg, red, blue);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.home h1::first-letter {
+    font-size: 5.5rem;
+    font-weight: bold;
+}
+
+.home p {
+    line-height: 2.5rem;
+}
+
+.home .btn {
+    margin-left: 10px;
+    margin-bottom: 10px;
+    border-radius: 0% 40%;
+}
+
+
+.Link{
+    margin-left: 20px;
+}
