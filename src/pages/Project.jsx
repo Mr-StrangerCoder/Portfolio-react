@@ -1,58 +1,39 @@
 import React from 'react'
 import './project.css'
-import { FaLaptopCode, FaShoppingCart, FaUserTie } from "react-icons/fa";
+import img from '../assets/2.jpg'
+import Project1 from '../components/Project1'
+import Project2 from '../components/Project2'
+import Project3 from '../components/Project3'
 
-
-
-const projects = [
-  {
-    id: 1,
-    title: "Portfolio Website",
-    desc: "Personal portfolio built using React with animations and responsive design.",
-    icon: <FaUserTie />,
-    tech: "React, CSS, Bootstrap"
-  },
-  {
-    id: 2,
-    title: "E-Commerce App",
-    desc: "Product listing, filter, cart system using API integration.",
-    icon: <FaShoppingCart />,
-    tech: "React, API, JavaScript"
-  },
-  {
-    id: 3,
-    title: "Admin Dashboard",
-    desc: "Dashboard with charts, user management and authentication.",
-    icon: <FaLaptopCode />,
-    tech: "React, Chart.js"
-  }
-  
-];
 
 
 const Project = () => {
   return (
-    <body className='project text-white conatiner'>
-      <section className="projects-section">
-        <h2 className="section-title">My Projects</h2>
-
-        <div className="projects-container">
-          {projects.map((project) => (
-            <div className="project-card" key={project.id}>
-              <div className="project-icon">{project.icon}</div>
-
-              <h3>{project.title}</h3>
-              <p>{project.desc}</p>
-              <span className="tech">{project.tech}</span>
-
-              <div className="btn-group">
-                <button className="btn">Live</button>
-                <button className="btn btn-outline">Code</button>
-              </div>
+    <body className='project text-white conatiner w-100'>
+      <h2 className="section-title mt-4">My Projects</h2>
+      <div className='container-fluid mx-auto'>
+        <div id="carouselExample" class="carousel slide">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+             <Project1/>
             </div>
-          ))}
+            <div class="carousel-item">
+             <Project2/>
+            </div>
+            <div class="carousel-item">
+             <Project3/>  
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
         </div>
-      </section>
+      </div>
     </body>
   )
 }
