@@ -6,14 +6,26 @@
 
 .home h1 {
     font-size: 4rem;
-
 }
 
 .gradient-text {
-    background: linear-gradient(90deg, red, blue);
+    background: linear-gradient(90deg, red, blue, red);
+    background-size: 300%;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    animation: gradientRun 3s linear infinite;
 }
+
+@keyframes gradientRun {
+    0% {
+        background-position: 0%;
+    }
+    
+    100% {
+        background-position: 300%;
+    }
+}
+
 
 .home h1::first-letter {
     font-size: 5.5rem;
@@ -27,10 +39,15 @@
 .home .btn {
     margin-left: 10px;
     margin-bottom: 10px;
-    border-radius: 0% 40%;
 }
+
+
 
 
 .Link{
     margin-left: 20px;
 }
+
+
+
+    

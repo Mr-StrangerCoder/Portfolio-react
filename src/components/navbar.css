@@ -1,6 +1,6 @@
 .navbar li{
     font-size: 1.1rem;
-    margin-right: 5rem;
+    margin-right: 1rem;
     transition: transform 0.3s ease, text-shadow 0.4s ease;
 
 }

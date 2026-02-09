@@ -1,9 +1,9 @@
 import React from 'react'
-import './contact.css'
+import './exp.css'
 
-const Contactus = () => {
+const Exp = () => {
   return (
-    <body className='contact text-white conatiner'>
+    <body className='exp text-white conatiner'>
       <h1 className='text-white'>hello</h1>
       <p>jsdhjashdjhjhjh</p>
 
@@ -11,4 +11,4 @@ const Contactus = () => {
   )
 }
 
-export default Contactus  
+export default Exp
