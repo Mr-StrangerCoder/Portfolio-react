@@ -14,21 +14,21 @@
 
 
 .project-card {
-  background: #02061754;
   padding: 5px;
-  border-radius: 20px;
   transition: 0.4s;
   position: relative;
   overflow: hidden;
   width: 16rem;
 
 }
+.tech{
+  color: rgb(123, 233, 123);
+}
 
 .project-card {
   color: #020617;
   background: rgba(255, 255, 255, 0.15);
   backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
   border-radius: 15px;
   box-shadow: 0 10px 25px rgba(0,0,0,0.2);
   border: 1px solid rgba(255,255,255,0.2);
@@ -47,8 +47,6 @@
 }
 
 .project-img {
-  font-size: 1rem;
-  color: #38bdf8;
   margin-bottom: 15px;
   animation: float 3s ease-in-out infinite;
 }
