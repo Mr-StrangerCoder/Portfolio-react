@@ -7,9 +7,8 @@
 .section-title {
   text-align: center;
   font-size: 2rem;
-  background: linear-gradient(90deg, #38bdf8, #22c55e);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: aqua;
+
 }
 
 
@@ -21,12 +20,16 @@
   width: 16rem;
 
 }
+.project-card h5{
+  font-size: 1.5rem;
+  color: aqua;
+}
 .tech{
   color: rgb(123, 233, 123);
 }
 
 .project-card {
-  color: #020617;
+
   background: rgba(255, 255, 255, 0.15);
   backdrop-filter: blur(10px);
   border-radius: 15px;
