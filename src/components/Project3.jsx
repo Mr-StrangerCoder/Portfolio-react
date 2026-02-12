@@ -3,7 +3,7 @@ import img from '../assets/2.jpg'
 
 const Project3 = () => {
   return (
-     <div className='container mx-auto mt-5'>
+     <div className='container mx-auto mt-2'>
                     <div className='d-flex justify-content-center gap-3'>
     
                       <div>
