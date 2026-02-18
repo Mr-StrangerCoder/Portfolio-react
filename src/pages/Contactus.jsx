@@ -5,10 +5,10 @@ import { Link } from 'react-router-dom'
 const Contactus = () => {
   return (
     <body className='contact text-white conatiner'>
-      <div className='container-fluid  w-75 mt-5 opacity-box ' style={{ height: '31rem' }}>
+      <div className='container-fluid  w-75 mt-3 opacity-box ' style={{ height: '30rem' }}>
         <div className='row p-5'>
           <div className='col-12 col-md-3  w-25' style={{ marginLeft: '3rem', marginTop: '2rem' }}>
-            <h2>Get in Touch</h2>
+            <h3 className='fw-bold'>Get in Touch</h3>
             <h4>I'd like to hear form you!</h4>
             <p>If you have any inquiries or just want to say hi, please use the contact form </p>
             <div className='d-flex justify-content-center gap-2'>
@@ -20,7 +20,7 @@ const Contactus = () => {
 
           </div>
           <div className='col-12 col-md-9  w-50 ' style={{ marginLeft: '10rem' }}>
-            <h3 className="mb-4 text-center">Contact Form</h3>
+            <h3 className="mb-4 text-center fw-bold">Contact Form</h3>
 
             <form>
               <div className="mb-3">
