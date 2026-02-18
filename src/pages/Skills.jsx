@@ -1,15 +1,5 @@
 import React from 'react'
 import './skills.css'
-import imghtml from '../assets/html.png'
-import imgcss from '../assets/css.webp'
-import imgboostrap from '../assets/boostrap.png'
-import imgreact from '../assets/react.png'
-import imgnode from '../assets/node.png'
-import imgc from '../assets/c.png'
-import imggithub from '../assets/github.png'
-import imgjs from '../assets/javascript.jpeg'
-
-
 
 const Skills = () => {
 

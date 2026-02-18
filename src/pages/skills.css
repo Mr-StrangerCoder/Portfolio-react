@@ -4,11 +4,11 @@
     background-size: cover;
 }
 
-.opacity-box {
-  /* background: rgba(0, 0, 0, 0.5);  */
 
-}
 .skills .bi{
 color: aqua;
 font-size: 3rem;
+background: linear-gradient(45deg, blue,red, yellow, purple);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
