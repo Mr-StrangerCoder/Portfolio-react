@@ -15,7 +15,7 @@ const Skills = () => {
   }
   return (
     <body className='skills text-white conatiner'>
-      <div className='ps-5 w-75 mx-auto mt-3 bg-dark pt-3'style={{ opacity: "0.8", borderRadius: '2rem'}}>
+      <div className='dark ps-5 w-75 mx-auto mt-3 pt-3'>
         <h1 className='text-center fw-bold ' style={{ color: '#3daee9' }}>My Skills</h1>
         <div className='row mt-4'>
           <div className='col-12 col-md-6'>

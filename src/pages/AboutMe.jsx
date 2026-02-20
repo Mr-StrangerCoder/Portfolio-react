@@ -16,7 +16,7 @@ const AboutMe = () => {
   return (
     <body className='about text-white conatiner'>
       <div className=' dark container-fluid w-75 mt-2 pb-5' style={{borderRadius: '2rem'}}>
-        <h1 className='mt-2 text-center' style={{ color: 'aqua' }}>About Me</h1>
+        <h1 className='mt-2 text-center' style={{ color: '#3daee9' }}>About Me</h1>
         <div className='row py-3'>
           <div className='col-12 col-md-2' style={{ marginLeft: '4rem', marginTop: '4rem', height:'15rem' }}>
             <img className='' src={img} alt=""/>
