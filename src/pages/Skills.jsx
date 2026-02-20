@@ -4,7 +4,7 @@ import './skills.css'
 const Skills = () => {
 
   const skill = {
-    html: 80,
+    html:80,
     css: 80,
     js: 70,
     bt: 60,
@@ -15,7 +15,6 @@ const Skills = () => {
   }
   return (
     <body className='skills text-white conatiner'>
-
       <div className='ps-5 w-75 mx-auto mt-3 bg-dark pt-3'style={{ opacity: "0.8", borderRadius: '2rem'}}>
         <h1 className='text-center fw-bold ' style={{ color: '#3daee9' }}>My Skills</h1>
         <div className='row mt-4'>
