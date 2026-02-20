@@ -15,18 +15,18 @@ const AboutMe = () => {
   }
   return (
     <body className='about text-white conatiner'>
-      <div className=' dark container-fluid w-75 mt-5 pb-5' style={{borderRadius: '2rem'}}>
+      <div className=' dark container-fluid w-75 mt-2 pb-5' style={{borderRadius: '2rem'}}>
         <h1 className='mt-2 text-center' style={{ color: 'aqua' }}>About Me</h1>
-        <div className='row py-2'>
-          <div className='col-12 col-md-3' style={{ marginLeft: '4rem', marginTop: '3rem', height:'15rem' }}>
-            <img className='ms-5' src={img} alt=""/>
+        <div className='row py-3'>
+          <div className='col-12 col-md-2' style={{ marginLeft: '4rem', marginTop: '4rem', height:'15rem' }}>
+            <img className='' src={img} alt=""/>
             
           </div>
-          <div className='col-12 col-md-9 order w-50 ' style={{ marginLeft: '10rem' }}>
+          <div className='col-12 col-md-10' style={{ marginLeft: '8rem', width:'39rem' }}>
             <p>I’m <span className="highlight fw-bold fs-51" style={{color:'aqua'}}>{about.name}</span>, a
               {about.aboutme}</p>
             <p>{about.about2}</p>
-            <div className="info-box mt-2 ">
+            <div className="info-box mt-2">
               <p><strong>DOB: </strong>{about.dob}</p>
               <p><strong>Email:</strong>{about.email}</p>
               <p><strong>Location:</strong> {about.address}</p>
