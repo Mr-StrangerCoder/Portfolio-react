@@ -10,7 +10,7 @@ import Project3 from '../components/Project3'
 const Project = () => {
   return (
     <body className='project text-white conatiner w-100'>
-      <h2 className="section-title mt-3">My Projects</h2>
+      <h1 className="section-title mt-3 fw-bold mb-3">My Projects</h1>
       <div className='container-fluid mx-auto'>
         <div id="carouselExample" class="carousel slide">
           <div class="carousel-inner">
