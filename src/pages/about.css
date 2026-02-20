@@ -4,9 +4,29 @@
     background-size: cover;
 
 }
+.about .dark{
+  background-color: rgba(0, 0, 0, 0.349);
+}
+
+.about img{
+  box-shadow: 0px 0px 50px aqua;
+  border-radius: 1rem;
+
+}
 
 .opacity-box {
-  background: rgb(49, 47, 47); /* opacity without fading text */
+  background: rgba(49, 47, 47, 0.116); /* opacity without fading text */
   border-radius: 20px;
   padding: 3rem;
+}
+
+
+.info-box {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 15px;
+  border-radius: 12px;
+}
+
+strong{
+  color: aqua;
 }
