@@ -17,7 +17,7 @@ const Contactus = () => {
 
   return (
     <div className='contact text-white container'>
-      <div className='container-fluid w-75 mt-3 opacity-box' style={{ height: '30rem' }}>
+      <div className='container-fluid w-75 mt-3 opacity-box' style={{height: '30rem' }}>
         <div className='row p-5'>
 
           <div className='col-12 col-md-3 w-25' style={{ marginLeft: '3rem', marginTop: '2rem' }}>
