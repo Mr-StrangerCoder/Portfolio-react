@@ -4,6 +4,7 @@ import img1 from '../assets/weather.png'
 import { Link } from 'react-router-dom'
 import img2 from '../assets/musiCloud.png'
 import img3 from '../assets/calculator.jpg'
+import img4 from "../assets/todo.jpg"
 
 
 
@@ -44,7 +45,7 @@ const Project1 = () => {
               <p className='tech'>HTML, CSS</p>
 
               <div className='btn-group d-flex'>
-                 <Link to={"https://mymusicloud.netlify.app"} className="btn">Live</Link>
+                <Link to={"https://mymusicloud.netlify.app"} className="btn">Live</Link>
                 <Link to={'https://github.com/Mr-StrangerCoder/Music-House-.git'} className="btn btn-outline">Code</Link>
               </div>
             </div>
@@ -53,15 +54,16 @@ const Project1 = () => {
 
         <div>
           <div className=" project-card p-3" style={{ width: '16rem' }}>
-            <img src={img} className="card-img-top project-img" alt="..." />
+            <img src={img4} className="card-img-top project-img" alt="..." />
             <div className="card-body">
-              <h5 className="card-title">Card title</h5>
-              <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-              <p className='tech'>HTML, CSS</p>
+              <h5 className="card-title">Todo-App</h5>
+              <p className="card-text">A simple task management app that lets users add, delete, and organize daily tasks.
+              </p>
+              <p className='tech'>JS, REACT.JS BOOTSTRAP</p>
 
               <div className='btn-group d-flex'>
-                <a href="#" className="btn">Live</a>
-                <a href="#" className="btn btn-outline">Code</a>
+                <Link to={"https://fastidious-lollipop-c36b37.netlify.app/"} className="btn">Live</Link>
+                <Link to={'https://github.com/Mr-StrangerCoder/Todo-app.git'} className="btn btn-outline">Code</Link>
               </div>
             </div>
           </div>
