@@ -75,7 +75,7 @@ const Project1 = () => {
             <div className="card-body">
               <h5 className="card-title">Calculator</h5>
               <p className="card-text"> Built a simple calculator using React to perform basic arithmetic operations.  Used React components.</p>
-              <p className='tech'>HTML, CSS</p>
+              <p className='tech'>JS, REACT, BOOTSTRAP </p>
 
               <div className='btn-group d-flex'>
                 <Link to={"https://github.com/Mr-StrangerCoder/calculator-react"} className="btn">Live</Link>
