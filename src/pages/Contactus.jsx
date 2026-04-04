@@ -12,10 +12,10 @@ const Contactus = () => {
   return (
     <>
       <body className='exp text-white conatiner'>
-        <div className=' conatiner w-75 px-2 my-4 border  mt-5 py-3' style={{ marginLeft: '10rem', height: "500px" }}>
+        <div className=' conatiner w-75 px-2 my-4 mt-5 py-3' style={{ marginLeft: '10rem', height: "500px", backgroundColor: " rgba(0, 0, 0, 0.479)", borderRadius:'2rem' }}>
           <div className='row'>
             <div className='col-12 col-md-3 w-25 py-5' style={{ marginLeft: '3rem', marginTop: '2rem' }}>
-              <h3 className='fw-bold'>Get in Touch</h3>
+              <h3 className='fw-bold' style={{color:'#3daee9'}}>Get in Touch </h3>
               <h4>I'd like to hear from you!</h4>
               <p>If you have any inquiries or just want to say hi, please use the contact form</p>
 
@@ -30,7 +30,7 @@ const Contactus = () => {
               </div>
             </div>
             <div className='col-12 col-md-7 ms-5 mt-4'>
-              <h3 className="mb-4 text-center fw-bold">Contact Form</h3>
+              <h3 className="mb-4 text-center fw-bold" style={{color:'#3daee9'}}>Contact Form</h3>
 
             <form>
               <div className="mb-3">
