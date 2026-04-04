@@ -1,76 +1,79 @@
 import React from 'react'
 import img from '../assets/2.jpg'
+import { Link } from 'react-router-dom'
+import img5 from "../assets/guessnumber.png"
+
 
 const Project2 = () => {
   return (
-     <div className='container mx-auto mt-2'>
-                    <div className='d-flex justify-content-center gap-3'>
-    
-                      <div>
-                        <div className=" project-card p-3" style={{ width: '16rem' }}>
-                          <img src={img} className="card-img-top project-img" alt="..." />
-                          <div className="card-body">
-                            <h5 className="card-title">Card title</h5>
-                            <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-                            <p className='tech'>HTML, CSS</p>
-                            <div className='btn-group d-flex'>
-                              <a href="#" className="btn">Live</a>
-                              <a href="#" className="btn btn-outline">Code</a>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-    
-                      <div>
-                        <div className=" project-card p-3" style={{ width: '16rem' }}>
-                          <img src={img} className="card-img-top project-img" alt="..." />
-                          <div className="card-body">
-                            <h5 className="card-title">Card title</h5>
-                            <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-                            <p className='tech'>HTML, CSS</p>
+    <div className='container mx-auto mt-2'>
+      <div className='d-flex justify-content-center gap-3'>
 
-                            <div className='btn-group d-flex'>
-                              <a href="#" className="btn">Live</a>
-                              <a href="#" className="btn btn-outline">Code</a>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-    
-                      <div>
-                        <div className=" project-card p-3" style={{ width: '16rem' }}>
-                          <img src={img} className="card-img-top project-img" alt="..." />
-                          <div className="card-body">
-                            <h5 className="card-title">Card title</h5>
-                            <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-                            <p className='tech'>HTML, CSS</p>
+        <div>
+          <div className=" project-card p-3" style={{ width: '16rem' }}>
+            <img src={img5} className="card-img-top project-img" alt="..." />
+            <div className="card-body">
+              <h5 className="card-title">Guess Number</h5>
+              <p className="card-text">Developed a Guess the Number Game using JavaScript and DOM manipulation</p>
+              <p className='tech'>HTML, CSS , JAVASCRIPT</p>
+              <div className='btn-group d-flex'>
+                <Link to={"https://guessmefast.netlify.app/"} className="btn">Live</Link>
+                <Link to={'https://github.com/Mr-StrangerCoder/guess-number.git'} className="btn btn-outline">Code</Link>
+              </div>
+            </div>
+          </div>
+        </div>
 
-                            <div className='btn-group d-flex'>
-                              <a href="#" className="btn">Live</a>
-                              <a href="#" className="btn btn-outline">Code</a>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-    
-                      <div>
-                        <div className=" project-card p-3" style={{ width: '16rem' }}>
-                          <img src={img} className="card-img-top project-img" alt="..." />
-                          <div className="card-body">
-                            <h5 className="card-title">Card title</h5>
-                            <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-                            <p className='tech'>HTML, CSS</p>
+        <div>
+          <div className=" project-card p-3" style={{ width: '16rem' }}>
+            <img src={img} className="card-img-top project-img" alt="..." />
+            <div className="card-body">
+              <h5 className="card-title">Card title</h5>
+              <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+              <p className='tech'>HTML, CSS</p>
 
-                            <div className='btn-group d-flex'>
-                              <a href="#" className="btn">Live</a>
-                              <a href="#" className="btn btn-outline">Code</a>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-    
-                    </div>
-                  </div>
+              <div className='btn-group d-flex'>
+                <a href="#" className="btn">Live</a>
+                <a href="#" className="btn btn-outline">Code</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div className=" project-card p-3" style={{ width: '16rem' }}>
+            <img src={img} className="card-img-top project-img" alt="..." />
+            <div className="card-body">
+              <h5 className="card-title">Card title</h5>
+              <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+              <p className='tech'>HTML, CSS</p>
+
+              <div className='btn-group d-flex'>
+                <a href="#" className="btn">Live</a>
+                <a href="#" className="btn btn-outline">Code</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div className=" project-card p-3" style={{ width: '16rem' }}>
+            <img src={img} className="card-img-top project-img" alt="..." />
+            <div className="card-body">
+              <h5 className="card-title">Card title</h5>
+              <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+              <p className='tech'>HTML, CSS</p>
+
+              <div className='btn-group d-flex'>
+                <a href="#" className="btn">Live</a>
+                <a href="#" className="btn btn-outline">Code</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
   )
 }
 
