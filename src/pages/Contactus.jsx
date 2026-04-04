@@ -1,51 +1,45 @@
 import React, { useRef, useEffect } from 'react'
 import './contact.css'
-import { Link } from 'react-router-dom'
 
 const Contactus = () => {
 
-  const inputRef = useRef(null);
+   const inputRef = useRef(null);
 
   useEffect(() => {
     inputRef.current.focus();
   }, [])
 
-  const handleSubmit = (e) => {
-  e.preventDefault();
-  alert("Message Sent Successfully!");
-};
-
   return (
-    <div className='contact text-white container'>
-      <div className='container-fluid w-75 mt-3 opacity-box' style={{height: '30rem' }}>
-        <div className='row p-5'>
+    <>
+      <body className='exp text-white conatiner'>
+        <div className=' conatiner w-75 px-2 my-4 border  mt-5 py-3' style={{ marginLeft: '10rem', height: "500px" }}>
+          <div className='row'>
+            <div className='col-12 col-md-3 w-25 py-5' style={{ marginLeft: '3rem', marginTop: '2rem' }}>
+              <h3 className='fw-bold'>Get in Touch</h3>
+              <h4>I'd like to hear from you!</h4>
+              <p>If you have any inquiries or just want to say hi, please use the contact form</p>
 
-          <div className='col-12 col-md-3 w-25' style={{ marginLeft: '3rem', marginTop: '2rem' }}>
-            <h3 className='fw-bold'>Get in Touch</h3>
-            <h4>I'd like to hear from you!</h4>
-            <p>If you have any inquiries or just want to say hi, please use the contact form</p>
+              <div className='d-flex justify-content-center gap-2'>
+                <a className='btn' href="https://www.linkedin.com/in/aadesh-sonawane-9baa951b6/" target="_blank" rel="noreferrer">
+                  <i className="bi bi-linkedin"></i>
+                </a>
 
-            <div className='d-flex justify-content-center gap-2'>
-              <a className='btn' href="https://www.linkedin.com/in/aadesh-sonawane-9baa951b6/" target="_blank" rel="noreferrer">
-                <i className="bi bi-linkedin"></i>
-              </a>
-
-              <a className='btn' href="mailto:aadeshsonawane307@gmail.com">
-                <i className="bi bi-envelope-fill"></i>
-              </a>
+                <a className='btn' href="mailto:aadeshsonawane307@gmail.com">
+                  <i className="bi bi-envelope-fill"></i>
+                </a>
+              </div>
             </div>
-          </div>
+            <div className='col-12 col-md-7 ms-5 mt-4'>
+              <h3 className="mb-4 text-center fw-bold">Contact Form</h3>
 
-          <div className='col-12 col-md-9 w-50' style={{ marginLeft: '10rem' }}>
-            <h3 className="mb-4 text-center fw-bold">Contact Form</h3>
-
-            <form onSubmit={handleSubmit}>
+            <form>
               <div className="mb-3">
                 <input
                   type="text"
                   className="form-control"
                   placeholder="Your Name"
-                  ref={inputRef}
+                   ref={inputRef}
+                
                 />
               </div>
 
@@ -69,13 +63,14 @@ const Contactus = () => {
                 Send Message
               </button>
             </form>
-
+            </div>
           </div>
 
         </div>
-      </div>
-    </div>
+      </body>
+    </>
   )
 }
+
 
 export default Contactus
