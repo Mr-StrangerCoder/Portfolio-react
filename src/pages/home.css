@@ -7,7 +7,9 @@
 .home h1 {
     font-size: 4rem;
 }
-
+.buttons{
+    width: 35rem;
+}
 .gradient-text {
     background: linear-gradient(90deg, red, blue, red);
     background-size: 300%;
@@ -49,5 +51,29 @@
 }
 
 
+
+@media(max-width: 480px){
+    .home h1{
+        font-size: 3.2rem
+    }
+  
+  .buttons{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    width: 400px;
+
+  }
+  .buttons .btn{
+    width: 110px;
+     font-size: 14px;
+  }
+  .data{
+    margin: 0px auto;
+  }
+
+}
+
+    
 
     
