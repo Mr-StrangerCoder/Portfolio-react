@@ -6,11 +6,12 @@ import img from '../assets/1123.jpg'
 const AboutMe = () => {
   let about = {
     name: 'Aadesh Vasantrao Sonawane',
-    dob: '17 July 1997',
-    address: 'R7 Life Republic Marunji-Kasarsai Road, near Marunji Village, Hinjawadi, Pune, Maharashtra 411057 ',
-    aboutme: ' passionate Full Stack Developer with a background in Hotel Management I discovered my love for coding and started learning web development on my own.',
-    about2: 'I enjoy building responsive and modern web applications using HTML, CSS, JavaScript, Bootstrap, and React.',
-    email: 'aadeshsonawane307@gmail.com'
+    role: 'Full Stack Developer',
+    description1: 'I am a passionate Full Stack Developer focused on building modern, responsive, and user-friendly web applications.',
+    description2: 'I have hands-on experience with HTML, CSS, JavaScript, Bootstrap, and React. I enjoy turning ideas into real-world projects and continuously improving my skills.',
+    email: 'aadeshsonawane307@gmail.com',
+    location: 'Pune, Maharashtra',
+    availability: 'Open to Opportunities'
 
   }
   return (
@@ -24,13 +25,13 @@ const AboutMe = () => {
           </div>
           <div className='col-12 col-md-10' style={{ marginLeft: '8rem', width:'39rem' }}>
             <p>I’m <span className="highlight fw-bold fs-51" style={{color:'aqua'}}>{about.name}</span>, a
-              {about.aboutme}</p>
-            <p>{about.about2}</p>
+              {about.description1}</p>
+            <p>{about.description2}</p>
             <div className="info-box mt-2">
-              <p><strong>DOB: </strong>{about.dob}</p>
-              <p><strong>Email:</strong>{about.email}</p>
-              <p><strong>Location:</strong> {about.address}</p>
-              <p><strong>Available for:</strong> Fresher Role</p>
+               <p><strong>Role:</strong> {about.role}</p>
+              <p><strong>Email:</strong> {about.email}</p>
+              <p><strong>Location:</strong> {about.location}</p>
+              <p><strong>Status:</strong> {about.availability}</p>
             </div>
           </div>
         </div >
