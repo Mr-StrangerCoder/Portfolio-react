@@ -1,80 +1,128 @@
+/* Background */
 .home {
-    background-image: url(/src/assets/home.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.home h1 {
-    font-size: 4rem;
-}
-.buttons{
-    width: 35rem;
-    margin-left: 10rem;
-}
-.gradient-text {
-    background: linear-gradient(90deg, red, blue, red);
-    background-size: 300%;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    animation: gradientRun 3s linear infinite;
-}
-
-@keyframes gradientRun {
-    0% {
-        background-position: 0%;
-    }
-    
-    100% {
-        background-position: 300%;
-    }
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 80px 20px 40px;
+  color: white;
 }
 
 
-.home h1::first-letter {
-    font-size: 5.5rem;
-    font-weight: bold;
-}
-
-.home p {
-    line-height: 2.5rem;
-}
-
-.home .btn {
-    margin-left: 10px;
-    margin-bottom: 10px;
+.content {
+  max-width: 800px;
 }
 
 
+.name {
+  font-size: 2.8rem;
+  font-weight: 700;
+}
 
-
-.Link{
-    margin-left: 20px;
+.name span {
+  color: #38bdf8;
 }
 
 
+.role {
+  font-size: 1.4rem;
+  margin-top: 10px;
+  color: #94a3b8;
+}
 
-@media(max-width: 480px){
-    .home h1{
-        font-size: 3.2rem
-    }
-  
-  .buttons{
-    display:flex;
-    flex-wrap:wrap;
-    justify-content:center;
-    width: 400px;
 
+.desc {
+  margin-top: 20px;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #cbd5e1;
+}
+.buttons {
+  margin-top: 25px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+}
+
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  padding: 10px 18px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 14px;
+  transition: 0.3s ease;
+}
+
+
+.primary {
+  background: #38bdf8;
+  color: black;
+  font-weight: 600;
+}
+
+.primary:hover {
+  background: #0ea5e9;
+}
+
+.outline {
+  border: 1px solid #38bdf8;
+  color: #38bdf8;
+}
+
+.outline:hover {
+  background: #38bdf8;
+  color: black;
+}
+
+.cv-btn {
+  display: inline-flex;
+  align-items: center;
+  margin-top: 25px;
+  padding: 10px 20px;
+  border: 1px solid #facc15;
+  color: #facc15;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.cv-btn:hover {
+  background: #facc15;
+  color: black;
+}
+
+
+@media (max-width: 768px) {
+
+  .name {
+    font-size: 2rem;
   }
-  .buttons .btn{
-    width: 110px;
-     font-size: 14px;
-  }
-  .data{
-    margin: 0px auto;
+
+  .role {
+    font-size: 1.1rem;
   }
 
+  .about {
+    font-size: 0.9rem;
+  }
+
+  .buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .btn {
+    width: 85%;
+  }
+
+  .cv-btn {
+    width: 85%;
+    justify-content: center;
+  }
 }
-
-    
-
-    

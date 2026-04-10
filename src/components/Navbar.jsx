@@ -4,98 +4,107 @@ import './navbar.css'
 
 const Navbar = () => {
     return (
-        <>
-            <nav className="navbar navbar-expand-lg">
-                <div className="container-fluid">
-                    <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                        <span className="navbar-toggler-icon"></span>
-                    </button>
+        <nav className="navbar navbar-expand-lg custom-navbar fixed-top">
+            <div className="container">
 
-                    <div className="collapse navbar-collapse" id="navbarNav">
-                        <div className='mx-auto'>
-                            <ul className="navbar-nav">
+                {/* Toggle Button */}
+                <button 
+                    className="navbar-toggler" 
+                    type="button" 
+                    data-bs-toggle="collapse" 
+                    data-bs-target="#navbarNav"
+                >
+                    <span className="navbar-toggler-icon"></span>
+                </button>
 
-                                <li className="nav-item">
-                                    <NavLink
-                                        to="/"
-                                        className={({ isActive }) =>
-                                            isActive
-                                                ? "nav-link text-info fw-bold active"
-                                                : "nav-link text-white fw-bold"
-                                        }
-                                    >
-                                        Home
-                                    </NavLink>
-                                </li>
+                {/* Menu */}
+                <div className="collapse navbar-collapse" id="navbarNav">
+                    <div className='mx-auto'>
+                        <ul className="navbar-nav text-center">
 
-                                <li className="nav-item">
-                                    <NavLink
-                                        to="/AboutMe"
-                                        className={({ isActive }) =>
-                                            isActive
-                                                ? "nav-link text-info fw-bold active"
-                                                : "nav-link text-white fw-bold"
-                                        }
-                                    >
-                                        About me
-                                    </NavLink>
-                                </li>
+                            <li className="nav-item">
+                                <NavLink
+                                    to="/"
+                                    className={({ isActive }) =>
+                                        isActive
+                                            ? "nav-link active-link"
+                                            : "nav-link"
+                                    }
+                                >
+                                    Home
+                                </NavLink>
+                            </li>
 
-                                <li className="nav-item">
-                                    <NavLink
-                                        to="/Skills"
-                                        className={({ isActive }) =>
-                                            isActive
-                                                ? "nav-link text-info fw-bold active"
-                                                : "nav-link text-white fw-bold"
-                                        }
-                                    >
-                                        Skills
-                                    </NavLink>
-                                </li>
+                            <li className="nav-item">
+                                <NavLink
+                                    to="/AboutMe"
+                                    className={({ isActive }) =>
+                                        isActive
+                                            ? "nav-link active-link"
+                                            : "nav-link"
+                                    }
+                                >
+                                    About
+                                </NavLink>
+                            </li>
 
-                                <li className="nav-item">
-                                    <NavLink
-                                        to="/Project"
-                                        className={({ isActive }) =>
-                                            isActive
-                                                ? "nav-link text-info fw-bold active"
-                                                : "nav-link text-white fw-bold"
-                                        }
-                                    >
-                                        Projects
-                                    </NavLink>
-                                </li>
+                            <li className="nav-item">
+                                <NavLink
+                                    to="/Skills"
+                                    className={({ isActive }) =>
+                                        isActive
+                                            ? "nav-link active-link"
+                                            : "nav-link"
+                                    }
+                                >
+                                    Skills
+                                </NavLink>
+                            </li>
 
-                                 <li className="nav-item">
-                                    <NavLink
-                                        to="/Exp"
-                                        className={({ isActive }) =>
-                                            isActive
-                                                ? "nav-link text-info fw-bold active"
-                                                : "nav-link text-white fw-bold"
-                                        }
-                                    >
-                                        Experience
-                                    </NavLink>
-                                </li>
+                            <li className="nav-item">
+                                <NavLink
+                                    to="/Project"
+                                    className={({ isActive }) =>
+                                        isActive
+                                            ? "nav-link active-link"
+                                            : "nav-link"
+                                    }
+                                >
+                                    Projects
+                                </NavLink>
+                            </li>
 
-                                <li className="nav-item">
-                                    <NavLink to="/Contactus" className={({ isActive }) => isActive
-                                                ? "nav-link text-info fw-bold active"
-                                                : "nav-link text-white fw-bold"
-                                        }
-                                    >
-                                        Contact me
-                                    </NavLink>
-                                </li>
+                            <li className="nav-item">
+                                <NavLink
+                                    to="/Exp"
+                                    className={({ isActive }) =>
+                                        isActive
+                                            ? "nav-link active-link"
+                                            : "nav-link"
+                                    }
+                                >
+                                    Experience
+                                </NavLink>
+                            </li>
 
-                            </ul>
-                        </div>
+                            <li className="nav-item">
+                                <NavLink
+                                    to="/Contactus"
+                                    className={({ isActive }) =>
+                                        isActive
+                                            ? "nav-link active-link"
+                                            : "nav-link"
+                                    }
+                                >
+                                    Contact
+                                </NavLink>
+                            </li>
+
+                        </ul>
                     </div>
                 </div>
-            </nav>
-        </>
+            </div>
+        </nav>
     )
 }
 

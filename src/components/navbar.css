@@ -1,11 +1,72 @@
-.navbar li{
-    font-size: 1.1rem;
-    margin-right: 1rem;
-    transition: transform 0.3s ease, text-shadow 0.4s ease;
-
-}
-.navbar li:hover{
-    transform: scale(1.1);
-  text-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+/* 🔥 Glass Navbar */
+.custom-navbar {
+  background: rgba(15, 23, 42, 0.6);
+  backdrop-filter: blur(12px);
+  padding: 12px 0;
+  transition: 0.3s ease;
 }
 
+/* Nav Links */
+.nav-link {
+  color: #e2e8f0 !important;
+  font-weight: 500;
+  margin: 0 12px;
+  position: relative;
+  transition: 0.3s;
+}
+
+/* Hover */
+.nav-link:hover {
+  color: #38bdf8 !important;
+}
+
+/* Active */
+.active-link {
+  color: #38bdf8 !important;
+  font-weight: 600;
+}
+
+/* Underline animation */
+.nav-link::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background: #38bdf8;
+  left: 0;
+  bottom: -4px;
+  transition: 0.3s;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+/* Toggle Button Fix */
+.navbar-toggler {
+  border: none;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+
+/* 📱 Mobile Styles */
+@media (max-width: 991px) {
+
+  .navbar-collapse {
+    background: rgba(15, 23, 42, 0.95);
+    border-radius: 10px;
+    margin-top: 10px;
+    padding: 15px;
+  }
+
+  .nav-link {
+    margin: 10px 0;
+    font-size: 16px;
+  }
+
+  .nav-link::after {
+    display: none; /* cleaner mobile */
+  }
+}
