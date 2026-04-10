@@ -7,17 +7,16 @@ const Navbar = () => {
         <nav className="navbar navbar-expand-lg custom-navbar fixed-top">
             <div className="container">
 
-                {/* Toggle Button */}
-                <button 
-                    className="navbar-toggler" 
-                    type="button" 
-                    data-bs-toggle="collapse" 
+                <button
+                    className="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
                     data-bs-target="#navbarNav"
                 >
-                    <span className="navbar-toggler-icon"></span>
+                    <i className="bi bi-list text-white fs-4"></i>
                 </button>
 
-                {/* Menu */}
+
                 <div className="collapse navbar-collapse" id="navbarNav">
                     <div className='mx-auto'>
                         <ul className="navbar-nav text-center">

@@ -17,9 +17,7 @@ const Home = () => {
         </h2>
 
         <p className='desc'>
-          I’m a self-taught web developer with a background in hotel management.
-          I love building modern, responsive web applications using HTML, CSS,
-          Bootstrap and JavaScript.
+          I am a passionate Full Stack Developer focused on building modern, responsive, and user-friendly web applications.I have hands-on experience with HTML, CSS, JavaScript, Bootstrap, and React. I enjoy turning ideas into real-world projects and continuously improving my skills.
         </p>
 
     
