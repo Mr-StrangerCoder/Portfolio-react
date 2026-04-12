@@ -1,128 +1,171 @@
-/* Background */
+/* ===== Reset ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  height: 100%;
+  overflow: hidden;
+}
+
+/* ===== Home Section ===== */
 .home {
-  min-height: 100vh;
-  background: linear-gradient(135deg, #0f172a, #1e293b);
+  height: 100vh;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 80px 20px 40px;
-  color: white;
+  background-color: #0d1b2a;
+  padding: 20px;
+  overflow: hidden;
 }
 
-
-.content {
-  max-width: 800px;
+.home .content {
+  max-width: 720px;
+  width: 100%;
+  text-align: center;
 }
 
-
-.name {
-  font-size: 2.8rem;
-  font-weight: 700;
-}
-
-.name span {
-  color: #38bdf8;
-}
-
-
-.role {
-  font-size: 1.4rem;
-  margin-top: 10px;
-  color: #94a3b8;
-}
-
-
-.desc {
-  margin-top: 20px;
-  font-size: 1rem;
-  line-height: 1.6;
-  color: #cbd5e1;
-}
-.buttons {
-  margin-top: 25px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 12px;
-}
-
-
-.btn {
+/* ===== Avatar ===== */
+.home .avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: #1a2f45;
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 6px;
-  padding: 10px 18px;
-  border-radius: 8px;
-  text-decoration: none;
-  font-size: 14px;
-  transition: 0.3s ease;
+  font-size: 26px;
+  font-weight: 500;
+  color: #38bdf8;
+  margin: 0 auto 20px;
+  border: 2px solid #38bdf8;
 }
 
-
-.primary {
-  background: #38bdf8;
-  color: black;
-  font-weight: 600;
+/* ===== Greeting ===== */
+.home .greeting {
+  font-size: 15px;
+  color: #8899aa;
+  margin-bottom: 8px;
 }
 
-.primary:hover {
-  background: #0ea5e9;
+/* ===== Name ===== */
+.home .name {
+  font-size: 36px;
+  font-weight: 500;
+  color: #e2e8f0;
+  margin-bottom: 14px;
+  line-height: 1.2;
 }
 
-.outline {
-  border: 1px solid #38bdf8;
+.home .name span {
   color: #38bdf8;
 }
 
-.outline:hover {
-  background: #38bdf8;
-  color: black;
-}
-
-.cv-btn {
+/* ===== Role Badge ===== */
+.home .role-badge {
   display: inline-flex;
   align-items: center;
-  margin-top: 25px;
-  padding: 10px 20px;
-  border: 1px solid #facc15;
-  color: #facc15;
-  border-radius: 6px;
+  gap: 8px;
+  background: #1a2f45;
+  color: #38bdf8;
+  border: 0.5px solid #2a4a6a;
+  border-radius: 999px;
+  padding: 6px 20px;
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+/* ===== Description ===== */
+.home .desc {
+  font-size: 15px;
+  color: #8899aa;
+  line-height: 1.7;
+  margin-bottom: 28px;
+  max-width: 560px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ===== Divider ===== */
+.home .divider {
+  width: 40px;
+  height: 2px;
+  background: #2a4a6a;
+  margin: 0 auto 28px;
+  border-radius: 2px;
+}
+
+/* ===== Social Links ===== */
+.home .social-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 24px;
+}
+
+.home .social-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 9px 18px;
+  border: 0.5px solid #2a4a6a;
+  border-radius: 8px;
+  background: #1a2f45;
+  color: #e2e8f0;
+  font-size: 14px;
   text-decoration: none;
-  transition: 0.3s;
+  transition: background 0.15s, border-color 0.15s, transform 0.1s;
 }
 
-.cv-btn:hover {
-  background: #facc15;
-  color: black;
+.home .social-btn:hover {
+  background: #22384f;
+  border-color: #38bdf8;
+  color: #e2e8f0;
 }
 
+.home .social-btn:active {
+  transform: scale(0.97);
+}
 
-@media (max-width: 768px) {
+/* Icon Colors */
+.home .social-btn.linkedin i { color: #0A66C2; }
+.home .social-btn.email i    { color: #f59e0b; }
+.home .social-btn.whatsapp i { color: #25D366; }
+.home .social-btn.phone i    { color: #22c55e; }
 
-  .name {
-    font-size: 2rem;
-  }
+/* ===== CV Button ===== */
+.home .cv-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 36px;
+  background: #38bdf8;
+  color: #0d1b2a;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: opacity 0.15s, transform 0.1s;
+  width: 100%;
+  justify-content: center;
+}
 
-  .role {
-    font-size: 1.1rem;
-  }
+.home .cv-btn:hover {
+  opacity: 0.88;
+  color: #0d1b2a;
+}
 
-  .about {
-    font-size: 0.9rem;
-  }
+.home .cv-btn:active {
+  transform: scale(0.97);
+}
 
-  .buttons {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .btn {
-    width: 85%;
-  }
-
-  .cv-btn {
-    width: 85%;
-    justify-content: center;
-  }
+/* ===== Responsive ===== */
+@media (max-width: 540px) {
+  .home .name     { font-size: 26px; }
+  .home .social-btn { padding: 8px 12px; font-size: 13px; }
 }
