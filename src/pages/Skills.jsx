@@ -4,54 +4,51 @@ import './skills.css'
 const Skills = () => {
 
   const skillsData = [
-    { name: "HTML", value: 80 },
-    { name: "CSS", value: 80 },
-    { name: "JavaScript", value: 70 },
-    { name: "Bootstrap", value: 60 },
-    { name: "React", value: 75 },
-    { name: "Node.js", value: 75 },
-    { name: "MongoDB", value: 65 },
-    { name: "MySQL", value: 65 },
-    { name: "Tailwind CSS", value: 70 },
-    { name: "GitHub", value: 65 }
+    { name: "HTML",         icon: "bi bi-filetype-html",  value: 80 },
+    { name: "CSS",          icon: "bi bi-filetype-css",   value: 80 },
+    { name: "JavaScript",   icon: "bi bi-filetype-js",    value: 70 },
+    { name: "Bootstrap",    icon: "bi bi-bootstrap",      value: 60 },
+    { name: "React",        icon: "bi bi-filetype-jsx",   value: 75 },
+    { name: "Node.js",      icon: "bi bi-server",         value: 75 },
+    { name: "MongoDB",      icon: "bi bi-database",       value: 65 },
+    { name: "MySQL",        icon: "bi bi-table",          value: 65 },
+    { name: "Tailwind CSS", icon: "bi bi-wind",           value: 70 },
+    { name: "GitHub",       icon: "bi bi-github",         value: 65 },
   ]
 
   return (
-    <body className='skills text-white container'>
-      <div className='dark p-4 mx-auto mt-3'>
+    <section className='skills'>
+      <div className='skills-container'>
 
-        <h1 className='text-center fw-bold mb-4' style={{ color: '#3daee9' }}>
-          My Skills
-        </h1>
+        <h1 className='title'>My Skills</h1>
 
         <div className='row'>
+          {skillsData.map((skill, index) => (
+            <div key={index} className='col-12 col-md-6'>
+              <div className='skill-item'>
 
-          {skillsData.map((skill, index) => {
-            return (
-              <div key={index} className='col-12 col-md-6 mb-4'>
-
-                
-                <div className='d-flex justify-content-between mb-3'>
-                  <span>{skill.name}</span>
-                  <span>{skill.value}%</span>
+                <div className='skill-label'>
+                  <span className='skill-name'>
+                    <i className={skill.icon}></i>
+                    {skill.name}
+                  </span>
+                  <span className='skill-percent'>{skill.value}%</span>
                 </div>
 
-                {/* Progress Bar */}
-                <div className='progress' style={{ height: '8px' }}>
-                  <div 
+                <div className='progress'>
+                  <div
                     className='progress-bar'
                     style={{ width: `${skill.value}%` }}
                   ></div>
                 </div>
 
               </div>
-            )
-          })}
-
+            </div>
+          ))}
         </div>
 
       </div>
-    </body>
+    </section>
   )
 }
 

@@ -1,4 +1,4 @@
-/* ===== Reset ===== */
+
 * {
   margin: 0;
   padding: 0;
@@ -10,7 +10,7 @@ html, body, #root {
   overflow: hidden;
 }
 
-/* ===== About Section ===== */
+
 .about {
   height: 100vh;
   width: 100%;
@@ -27,7 +27,7 @@ html, body, #root {
   width: 100%;
 }
 
-/* ===== Title ===== */
+
 .about .title {
   font-size: 36px;
   font-weight: 500;
@@ -35,7 +35,7 @@ html, body, #root {
   margin-bottom: 32px;
 }
 
-/* ===== Profile Image ===== */
+
 .about .profile-img {
   width: 180px;
   height: 180px;
@@ -45,7 +45,7 @@ html, body, #root {
   box-shadow: 0 0 20px rgba(56, 189, 248, 0.2);
 }
 
-/* ===== Description Text ===== */
+
 .about .col-12.col-md-8 p {
   font-size: 15px;
   color: #8899aa;
@@ -58,7 +58,7 @@ html, body, #root {
   font-weight: 500;
 }
 
-/* ===== Info Box ===== */
+
 .about .info-box {
   background: #1a2f45;
   border: 0.5px solid #2a4a6a;
@@ -90,7 +90,7 @@ html, body, #root {
   font-weight: 500;
 }
 
-/* ===== Responsive ===== */
+
 @media (max-width: 768px) {
   html, body, #root {
     overflow: auto;

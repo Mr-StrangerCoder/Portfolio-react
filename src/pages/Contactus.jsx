@@ -1,21 +1,17 @@
-import React, { useRef, useEffect, useState } from 'react'
-// import './contact.css'
-import emailjs from "@emailjs/browser";
+import React, { useRef, useState } from 'react'
+import './contact.css'
+import emailjs from "@emailjs/browser"
 
 const Contactus = () => {
-  const formRef = useRef(null);
-  const inputRef = useRef(null);
-  const [loading, setLoading] = useState(false);
-  const [status, setStatus] = useState(null);
-
-  // useEffect(() => {
-  //   inputRef.current.focus();
-  // }, []);
+  const formRef = useRef(null)
+  const inputRef = useRef(null)
+  const [loading, setLoading] = useState(false)
+  const [status, setStatus] = useState(null)
 
   const handleSubmit = (e) => {
-    e.preventDefault();
-    setLoading(true);
-    setStatus(null);
+    e.preventDefault()
+    setLoading(true)
+    setStatus(null)
 
     emailjs.sendForm(
       process.env.REACT_APP_EMAILJS_SERVICE_ID,
@@ -24,113 +20,113 @@ const Contactus = () => {
       process.env.REACT_APP_EMAILJS_PUBLIC_KEY
     )
     .then(() => {
-      setStatus('success');
-      formRef.current.reset();
+      setStatus('success')
+      formRef.current.reset()
     })
     .catch(() => {
-      setStatus('error');
+      setStatus('error')
     })
     .finally(() => {
-      setLoading(false);
-    });
-  };
+      setLoading(false)
+    })
+  }
 
   return (
-    <>
-      <body className='exp text-white conatiner'>
-        <div
-          className='conatiner w-75 px-2 my-4 mt-5 py-3'
-          style={{
-            marginLeft: '10rem',
-            height: "500px",
-            backgroundColor: "rgba(0, 0, 0, 0.479)",
-            borderRadius: '2rem'
-          }}
-        >
-          <div className='row'>
+    <section className='contact'>
 
-        
-            <div className='col-12 col-md-3 w-25 py-5' style={{ marginLeft: '3rem', marginTop: '2rem' }}>
-              <h3 className='fw-bold' style={{ color: '#3daee9' }}>Get in Touch</h3>
-              <h4>I'd like to hear from you!</h4>
-              <p>If you have any inquiries or just want to say hi, please use the contact form</p>
-              <div className='d-flex justify-content-center gap-2'>
-                <a className='btn' href="https://www.linkedin.com/in/aadesh-sonawane-9baa951b6/" target="_blank" rel="noreferrer">
-                  <i className="bi bi-linkedin"></i>
-                </a>
-                <a className='btn' href="mailto:aadeshsonawane307@gmail.com">
-                  <i className="bi bi-envelope-fill"></i>
-                </a>
-              </div>
-            </div>
+      <h1 className='title'>Contact Me</h1>
 
-    
-            <div className='col-12 col-md-7 ms-5 mt-4'>
-              <h3 className="mb-4 text-center fw-bold" style={{ color: '#3daee9' }}>Contact Form</h3>
+      <div className='contact-card'>
+
+        <div className='left-panel'>
+
+          <h3>Get in Touch</h3>
+          <h4>I'd love to hear from you!</h4>
+          <p>
+            Have any inquiries or just want to say hi?
+            Feel free to reach out using the contact form
+            or connect with me on social media.
+          </p>  
+        </div>
 
       
-              {status === 'success' && (
-                <div className="alert alert-success py-2 text-center">
-                  ✅ Message sent successfully!
-                </div>
-              )}
-              {status === 'error' && (
-                <div className="alert alert-danger py-2 text-center">
-                  ❌ Something went wrong. Please try again.
-                </div>
-              )}
+        <div className='right-panel'>
 
-              <form ref={formRef} onSubmit={handleSubmit}>
-                <div className="mb-3">
-                  <input
-                    type="text"
-                    name="name"
-                    className="form-control"
-                    placeholder="Your Name"
-                    ref={inputRef}
-                    required
-                  />
-                </div>
-                <div className="mb-3">
-                  <input
-                    type="email"
-                    name="email"
-                    className="form-control"
-                    placeholder="Your Email"
-                    required
-                  />
-                </div>
-                <div className="mb-3">
-                  <textarea
-                    className="form-control"
-                    name="message"
-                    rows="4"
-                    placeholder="Your Message"
-                    required
-                  ></textarea>
-                </div>
-                <button
-                  type="submit"
-                  className="btn btn-primary w-100 rounded-pill"
-                  disabled={loading}
-                >
-                  {loading ? (
-                    <>
-                      <span className="spinner-border spinner-border-sm me-2" role="status" />
-                      Sending...
-                    </>
-                  ) : (
-                    'Send Message'
-                  )}
-                </button>
-              </form>
+          <h3>Send a Message</h3>
+
+          {status === 'success' && (
+            <div className="contact-alert success mb-3">
+              <i className="bi bi-check-circle-fill me-2"></i>
+              Message sent successfully!
             </div>
+          )}
+          {status === 'error' && (
+            <div className="contact-alert error mb-3">
+              <i className="bi bi-x-circle-fill me-2"></i>
+              Something went wrong. Please try again.
+            </div>
+          )}
 
-          </div>
+          <form ref={formRef} onSubmit={handleSubmit}>
+
+            <div className="input-group-custom">
+  <i className="bi bi-person-fill input-icon"></i>
+  <input
+    type="text"
+    name="name"
+    className="form-control custom-input"
+    placeholder="Your Name"
+    ref={inputRef}
+    required
+  />
+</div>
+
+<div className="input-group-custom">
+  <i className="bi bi-envelope-fill input-icon"></i>
+  <input
+    type="email"
+    name="email"
+    className="form-control custom-input"
+    placeholder="Your Email"
+    required
+  />
+</div>
+
+<div className="input-group-custom">
+  <i className="bi bi-chat-left-text-fill input-icon textarea-icon"></i>
+  <textarea
+    className="form-control custom-input"
+    name="message"
+    rows="5"
+    placeholder="Your Message"
+    required
+  ></textarea>
+</div>
+
+            <button
+              type="submit"
+              className="submit-btn mt-3"
+              disabled={loading}
+            >
+              {loading ? (
+                <>
+                  <span className="spinner-border spinner-border-sm" role="status" />
+                  Sending...
+                </>
+              ) : (
+                <>
+                  <i className="bi bi-send-fill"></i>
+                  Send Message
+                </>
+              )}
+            </button>
+
+          </form>
         </div>
-      </body>
-    </>
-  );
-};
 
-export default Contactus;
+      </div>
+    </section>
+  )
+}
+
+export default Contactus
