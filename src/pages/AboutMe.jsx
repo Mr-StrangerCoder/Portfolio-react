@@ -20,7 +20,7 @@ const AboutMe = () => {
 
         <h1 className='text-center title'>About Me</h1>
 
-        <div className='row align-items-center mt-4'>
+        <div className='row align-items-center'>
 
           {/* Image */}
           <div className='col-12 col-md-4 text-center mb-4'>
@@ -30,24 +30,35 @@ const AboutMe = () => {
           {/* Content */}
           <div className='col-12 col-md-8'>
             <p>
-              I’m <span className="highlight">{about.name}</span>, {about.description1}
+              I'm <span className="highlight">{about.name}</span>, {about.description1}
             </p>
 
             <p>{about.description2}</p>
 
             {/* Info Box */}
-            <div className="info-box mt-3">
+            <div className="info-box">
 
-              <p><i className="bi bi-person-fill me-2"></i><strong>Role:</strong> {about.role}</p>
+              <p>
+                <i className="bi bi-person-fill"></i>
+                <strong>Role:</strong> {about.role}
+              </p>
 
-              <p><i className="bi bi-envelope-fill me-2"></i><strong>Email:</strong> {about.email}</p>
+              <p>
+                <i className="bi bi-envelope-fill"></i>
+                <strong>Email:</strong> {about.email}
+              </p>
 
-              <p><i className="bi bi-geo-alt-fill me-2"></i><strong>Location:</strong> {about.location}</p>
+              <p>
+                <i className="bi bi-geo-alt-fill"></i>
+                <strong>Location:</strong> {about.location}
+              </p>
 
-              <p><i className="bi bi-briefcase-fill me-2"></i><strong>Status:</strong> {about.availability}</p>
+              <p>
+                <i className="bi bi-briefcase-fill"></i>
+                <strong>Status:</strong> {about.availability}
+              </p>
 
             </div>
-
           </div>
 
         </div>
