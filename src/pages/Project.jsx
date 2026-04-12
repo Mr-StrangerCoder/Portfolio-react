@@ -1,42 +1,67 @@
 import React from 'react'
 import './project.css'
-import img from '../assets/2.jpg'
 import Project1 from '../components/Project1'
 import Project2 from '../components/Project2'
 import Project3 from '../components/Project3'
 
-
-
 const Project = () => {
   return (
-    <body className='project text-white conatiner w-100'>
-      <h1 className="section-title mt-3 fw-bold mb-3">My Projects</h1>
-      <div className='container-fluid mx-auto'>
-        <div id="carouselExample" class="carousel slide">
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-             <Project1/>
+    <section className='projects '>
+
+      <h1 className='title'>My Projects</h1>
+
+      <div className='container-fluid px-5 ' style={{paddingLeft:"20rem"}}>
+        <div
+          id="carouselExample"
+          className="carousel slide  ms-3"
+          data-bs-ride="carousel"
+        >
+          
+          <div className="carousel-indicators ">
+            <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="0" className="active"></button>
+            <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="2"></button>
+          </div>
+
+    
+          <div className="carousel-inner ms-5">
+            <div className="carousel-item active">
+              <Project1 />
             </div>
-            <div class="carousel-item">
-             <Project2/>
+            <div className="carousel-item">
+              <Project2 />
             </div>
-            <div class="carousel-item">
-             <Project3/>  
+            <div className="carousel-item">
+              <Project3 />
             </div>
           </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon me-5" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
+
+
+          <button
+            className="carousel-control-prev "
+            type="button"
+            data-bs-target="#carouselExample"
+            data-bs-slide="prev"
+          >
+            <span className="carousel-control-prev-icon"></span>
+            <span className="visually-hidden">Previous</span>
           </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-            <span class="carousel-control-next-icon ms-5" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
+
+          <button
+            className="carousel-control-next"
+            
+            type="button"
+            data-bs-target="#carouselExample"
+            data-bs-slide="next"
+          >
+            <span className="carousel-control-next-icon"></span>
+            <span className="visually-hidden">Next</span>
           </button>
+
         </div>
       </div>
-    </body>
+    </section>
   )
 }
 
 export default Project
-

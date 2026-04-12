@@ -1,9 +1,9 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import "../pages/project.css";
+import '../pages/project.css'
 
 import img from '../assets/2.jpg'
-import img5 from "../assets/guessnumber.png"
+import img5 from '../assets/guessnumber.png'
 
 const Project2 = () => {
 
@@ -43,54 +43,33 @@ const Project2 = () => {
   ]
 
   return (
-    <div className='container py-3'>
-
+    <div className='container py-3 ms-2'>
       <div className='row g-4 justify-content-center'>
-
         {projectData.map((item, index) => (
           <div className='col-12 col-sm-6 col-lg-3' key={index}>
-
-            <div className="project-card h-100 d-flex flex-column">
-
-              {/* Image */}
+            <div className="project-card">
               <div className="img-wrapper">
                 <img src={item.img} alt={item.title} />
               </div>
-
-              {/* Content */}
-              <div className="card-body d-flex flex-column">
-
+              <div className="card-body">
                 <h5 className="card-title">{item.title}</h5>
-
-                <p className="card-text flex-grow-1">
-                  {item.desc}
-                </p>
-
+                <p className="card-text">{item.desc}</p>
                 <p className='tech'>
-                  <i className="bi bi-tools me-2"></i>
+                  <i className="bi bi-tools"></i>
                   {item.tech}
                 </p>
-
-                {/* Buttons */}
-                <div className='d-flex gap-2 mt-2'>
-
-                  <Link to={item.live} target="_blank" className="btn primary">
-                    <i className="bi bi-box-arrow-up-right"></i>
+                <div className='btn-group'>
+                  <Link to={item.live} target="_blank" className="btn-live">
+                    <i className="bi bi-box-arrow-up-right"></i> Live
                   </Link>
-
-                  <Link to={item.code} target="_blank" className="btn outline">
-                    <i className="bi bi-github"></i>
+                  <Link to={item.code} target="_blank" className="btn-code">
+                    <i className="bi bi-github"></i> Code
                   </Link>
-
                 </div>
-
               </div>
-
             </div>
-
           </div>
         ))}
-
       </div>
     </div>
   )
