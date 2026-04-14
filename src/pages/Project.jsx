@@ -5,6 +5,8 @@ import Project2 from '../components/Project2'
 import Project3 from '../components/Project3'
 
 const Project = () => {
+
+
   return (
     <section className='projects '>
 
@@ -57,7 +59,6 @@ const Project = () => {
             <span className="carousel-control-next-icon"></span>
             <span className="visually-hidden">Next</span>
           </button>
-
         </div>
       </div>
     </section>

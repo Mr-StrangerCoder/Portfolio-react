@@ -2,7 +2,7 @@ import React, { useRef, useState } from 'react'
 import './contact.css'
 import emailjs from "@emailjs/browser"
 
-const Contactus = () => {
+const Contactme = () => {
   const formRef = useRef(null)
   const inputRef = useRef(null)
   const [loading, setLoading] = useState(false)
@@ -13,18 +13,22 @@ const Contactus = () => {
     setLoading(true)
     setStatus(null)
 
-    emailjs.sendForm(
-      process.env.REACT_APP_EMAILJS_SERVICE_ID,
-      process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
-      formRef.current,
-      process.env.REACT_APP_EMAILJS_PUBLIC_KEY
-    )
-    .then(() => {
+emailjs.sendForm(
+  "service_brldpqc",
+  "template_v41fmi8",
+  formRef.current,
+  { publicKey: "UxdaZwxID-dxvEPtW" }
+)
+    .then((result) => {
+       console.log("result:", result)
       setStatus('success')
-      formRef.current.reset()
+       formRef.current.reset() 
+      setTimeout(() => setStatus(null), 5000)
     })
-    .catch(() => {
+    .catch((error) => {
+       console.log("ERROR:", error)
       setStatus('error')
+      setTimeout(() => setStatus(null), 5000)
     })
     .finally(() => {
       setLoading(false)
@@ -55,13 +59,13 @@ const Contactus = () => {
           <h3>Send a Message</h3>
 
           {status === 'success' && (
-            <div className="contact-alert success mb-3">
+            <div className="contact-alert success mb-3 text-white">
               <i className="bi bi-check-circle-fill me-2"></i>
               Message sent successfully!
             </div>
           )}
           {status === 'error' && (
-            <div className="contact-alert error mb-3">
+            <div className="contact-alert error mb-3 text-white">
               <i className="bi bi-x-circle-fill me-2"></i>
               Something went wrong. Please try again.
             </div>
@@ -129,4 +133,4 @@ const Contactus = () => {
   )
 }
 
-export default Contactus
+export default Contactme

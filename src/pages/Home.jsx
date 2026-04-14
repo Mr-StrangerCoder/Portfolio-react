@@ -9,7 +9,7 @@ const Home = () => {
 
         <div className='avatar'>AS</div>
 
-        <p className='greeting'>Hello, world!</p>
+        {/* <p className='greeting'>Hello, world!</p> */}
 
         <h1 className='name'>
           I'm <span>Aadesh Sonawane</span>
