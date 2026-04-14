@@ -7,6 +7,11 @@ const Contactme = () => {
   const inputRef = useRef(null)
   const [loading, setLoading] = useState(false)
   const [status, setStatus] = useState(null)
+  const [formData, setFormData] = useState({ name: '', email: '', message: '' })
+
+const handleChange = (e) => {
+  setFormData({ ...formData, [e.target.name]: e.target.value })
+}
 
   const handleSubmit = (e) => {
     e.preventDefault()
@@ -22,7 +27,7 @@ emailjs.sendForm(
     .then((result) => {
        console.log("result:", result)
       setStatus('success')
-       formRef.current.reset() 
+       setFormData({ name: '', email: '', message: '' })
       setTimeout(() => setStatus(null), 5000)
     })
     .catch((error) => {
@@ -76,6 +81,8 @@ emailjs.sendForm(
             <div className="input-group-custom">
   <i className="bi bi-person-fill input-icon"></i>
   <input
+  value={formData.name} onChange={handleChange}
+
     type="text"
     name="name"
     className="form-control custom-input"
@@ -88,6 +95,7 @@ emailjs.sendForm(
 <div className="input-group-custom">
   <i className="bi bi-envelope-fill input-icon"></i>
   <input
+   value={formData.email} onChange={handleChange}
     type="email"
     name="email"
     className="form-control custom-input"
@@ -99,6 +107,7 @@ emailjs.sendForm(
 <div className="input-group-custom">
   <i className="bi bi-chat-left-text-fill input-icon textarea-icon"></i>
   <textarea
+  value={formData.message} onChange={handleChange}
     className="form-control custom-input"
     name="message"
     rows="5"
