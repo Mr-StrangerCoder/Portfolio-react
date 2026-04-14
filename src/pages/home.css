@@ -1,4 +1,4 @@
-/* ===== Reset ===== */
+
 * {
   margin: 0;
   padding: 0;
@@ -10,14 +10,14 @@ html, body, #root {
   overflow: hidden;
 }
 
-/* ===== Home Section ===== */
+
 .home {
   height: 100vh;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #0d1b2a;
+  
   padding: 20px;
   overflow: hidden;
 }
@@ -28,7 +28,6 @@ html, body, #root {
   text-align: center;
 }
 
-/* ===== Avatar ===== */
 .home .avatar {
   width: 80px;
   height: 80px;
@@ -44,14 +43,13 @@ html, body, #root {
   border: 2px solid #38bdf8;
 }
 
-/* ===== Greeting ===== */
 .home .greeting {
   font-size: 15px;
   color: #8899aa;
   margin-bottom: 8px;
 }
 
-/* ===== Name ===== */
+
 .home .name {
   font-size: 36px;
   font-weight: 500;
@@ -64,7 +62,7 @@ html, body, #root {
   color: #38bdf8;
 }
 
-/* ===== Role Badge ===== */
+
 .home .role-badge {
   display: inline-flex;
   align-items: center;
@@ -79,7 +77,7 @@ html, body, #root {
   margin-bottom: 20px;
 }
 
-/* ===== Description ===== */
+
 .home .desc {
   font-size: 15px;
   color: #8899aa;
@@ -90,7 +88,7 @@ html, body, #root {
   margin-right: auto;
 }
 
-/* ===== Divider ===== */
+
 .home .divider {
   width: 40px;
   height: 2px;
@@ -99,7 +97,7 @@ html, body, #root {
   border-radius: 2px;
 }
 
-/* ===== Social Links ===== */
+
 .home .social-links {
   display: flex;
   flex-wrap: wrap;
@@ -132,13 +130,13 @@ html, body, #root {
   transform: scale(0.97);
 }
 
-/* Icon Colors */
+
 .home .social-btn.linkedin i { color: #0A66C2; }
 .home .social-btn.email i    { color: #f59e0b; }
 .home .social-btn.whatsapp i { color: #25D366; }
 .home .social-btn.phone i    { color: #22c55e; }
 
-/* ===== CV Button ===== */
+
 .home .cv-btn {
   display: inline-flex;
   align-items: center;
@@ -164,7 +162,7 @@ html, body, #root {
   transform: scale(0.97);
 }
 
-/* ===== Responsive ===== */
+
 @media (max-width: 540px) {
   .home .name     { font-size: 26px; }
   .home .social-btn { padding: 8px 12px; font-size: 13px; }

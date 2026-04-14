@@ -2,7 +2,11 @@ import React from 'react'
 import { NavLink } from 'react-router-dom'
 import './navbar.css'
 
-const Navbar = () => {
+const Navbar = ({ theme, setTheme }) => {
+
+    const toggleTheme = () => {
+        setTheme(theme === "light" ? "dark" : "light");
+    };
     return (
         <nav className="navbar navbar-expand-lg custom-navbar fixed-top">
             <div className="container">
@@ -14,6 +18,10 @@ const Navbar = () => {
                     data-bs-target="#navbarNav"
                 >
                     <i className="bi bi-list text-white fs-4"></i>
+                </button>
+
+                <button onClick={toggleTheme} className='btn'>
+                    {theme === "light" ? "🌙" : "☀️"}
                 </button>
 
 
@@ -100,7 +108,10 @@ const Navbar = () => {
                             </li>
 
                         </ul>
+
+
                     </div>
+
                 </div>
             </div>
         </nav>

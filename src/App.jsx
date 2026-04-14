@@ -1,5 +1,6 @@
 
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { BrowserRouter, Route, Routes} from 'react-router-dom';
+import React, { useState, useEffect } from "react";
 import './App.css'
 
 import 'bootstrap/dist/css/bootstrap.css';
@@ -15,10 +16,16 @@ import Exp from './pages/Exp.jsx';
 
 function App() {
 
+  const [theme, setTheme] = useState("light");
+
+  useEffect(() => {
+    document.body.className = theme;
+  }, [theme]);
+
   return (
 
     <BrowserRouter>
-      <Navbar />
+      <Navbar  theme={theme} setTheme={setTheme} />
       <Routes>
         <Route path='/' element={<Home/>}></Route>
         <Route path='/AboutMe' element={<AboutMe/>}></Route>

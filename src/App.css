@@ -13,3 +13,23 @@ html, body {
 #root {
   height: 100%;
 }
+
+body.light {
+  background: white;
+  color: black;
+}
+
+body.dark {
+  background: #121212;
+  color: white;
+}
+
+body.dark .custom-navbar {
+  background-color: #1f1f1f;
+}
+
+body.light .custom-navbar {
+  background-color: #f5f7fa;
+  color: black;
+  
+}

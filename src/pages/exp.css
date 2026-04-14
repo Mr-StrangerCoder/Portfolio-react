@@ -15,7 +15,7 @@ html, body, #root {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #0d1b2a;
+  /* background-color: #0d1b2a; */
   padding: 80px 20px 60px 20px;
   overflow-y: auto;
   scroll-behavior: smooth;
