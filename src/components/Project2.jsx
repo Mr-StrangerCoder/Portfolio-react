@@ -4,6 +4,9 @@ import '../pages/project.css'
 
 import img from '../assets/2.jpg'
 import img5 from '../assets/guessnumber.png'
+import img6 from '../assets/Task_management.png'
+
+
 
 const Project2 = () => {
 
@@ -12,17 +15,17 @@ const Project2 = () => {
       title: "Guess Number",
       img: img5,
       desc: "Guess the number game using JavaScript & DOM.",
-      tech: "HTML, CSS, JS",
+      tech: "HTML, CSS, JS, DOM",
       live: "https://guessmefast.netlify.app/",
       code: "https://github.com/Mr-StrangerCoder/guess-number.git"
     },
     {
-      title: "Project Demo",
-      img: img,
-      desc: "Sample project description here.",
-      tech: "HTML, CSS",
-      live: "#",
-      code: "#"
+      title: "Task Managemnet",
+      img: img6,
+      desc: "featuring task creation, updates, deletion, and status tracking with a clean and responsive UI",
+      tech: "Mysql, Express.js, React.js, Node.js, REST API, JWT Authentication",
+      live: "https://task-management-frontend-one-nu.vercel.app/",
+      code: "https://github.com/Mr-StrangerCoder/task-management-backend.git"
     },
     {
       title: "Project Demo",

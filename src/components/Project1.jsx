@@ -13,7 +13,7 @@ const Project1 = () => {
     {
       title: "Mausam Vaani",
       img: img1,
-      desc: "Real-time weather app using React & API.",
+      desc: "A responsive Weather Application built using HTML, CSS, and JavaScript, integrated with a third-party API to fetch real-time weather data.",
       tech: "HTML, CSS, JS, API",
       live: "https://mausamvaani.netlify.app/",
       code: "https://github.com/Mr-StrangerCoder/Weather-App.git"
@@ -21,15 +21,15 @@ const Project1 = () => {
     {
       title: "Music App",
       img: img2,
-      desc: "Spotify-like music player with clean UI.",
-      tech: "HTML, CSS",
+      desc: "A responsive Music Player web application built using HTML, CSS, and JavaScript. Focused on smooth user experience",
+      tech: "HTML, CSS, JAVASCRIPT",
       live: "https://mymusicloud.netlify.app",
       code: "https://github.com/Mr-StrangerCoder/Music-House-.git"
     },
     {
       title: "Todo App",
       img: img4,
-      desc: "Task manager to add, delete & organize tasks.",
+      desc: "A responsive Todo Application built with React, allowing users to create, update, and delete tasks with a smooth and intuitive user interface.",
       tech: "React, Bootstrap",
       live: "https://fastidious-lollipop-c36b37.netlify.app/",
       code: "https://github.com/Mr-StrangerCoder/Todo-app.git"
@@ -37,9 +37,9 @@ const Project1 = () => {
     {
       title: "Calculator",
       img: img3,
-      desc: "Simple calculator using React components.",
+      desc: "Built a responsive Calculator App using React and Bootstrap, demonstrating strong understanding of component structure",
       tech: "React, Bootstrap, Javascript",
-      live: "https://github.com/Mr-StrangerCoder/calculator-react",
+      live: "https://calculator-react-virid-seven.vercel.app/",
       code: "https://github.com/Mr-StrangerCoder/calculator-react"
     }
   ]
