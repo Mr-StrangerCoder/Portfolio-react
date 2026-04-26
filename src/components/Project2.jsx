@@ -5,6 +5,7 @@ import '../pages/project.css'
 import img from '../assets/2.jpg'
 import img5 from '../assets/guessnumber.png'
 import img6 from '../assets/Task_management.png'
+import img7 from '../assets/poem.png'
 
 
 
@@ -28,12 +29,12 @@ const Project2 = () => {
       code: "https://github.com/Mr-StrangerCoder/task-management-backend.git"
     },
     {
-      title: "Project Demo",
-      img: img,
-      desc: "Sample project description here.",
-      tech: "HTML, CSS",
-      live: "#",
-      code: "#"
+      title: "RhymeWrite",
+      img: img7,
+      desc: "A poem sharing platform where users can write, share and like poems with tinder-style swipe reels",
+      tech: "React.js Node.js Express.js MongoDB Tailwind CSS JWT bcrypt Axios Vercel Render",
+      live: "https://poem-frontend-two.vercel.app",
+      code: "https://github.com/Mr-StrangerCoder/poem-backend.git"
     },
     {
       title: "Project Demo",
