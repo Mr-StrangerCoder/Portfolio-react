@@ -25,7 +25,7 @@ const Project2 = () => {
       img: img6,
       desc: "featuring task creation, updates, deletion, and status tracking with a clean and responsive UI",
       tech: "Mysql, Express.js, React.js, Node.js, REST API, JWT Authentication",
-      live: "https://task-management-frontend-one-nu.vercel.app/",
+      live: "https://task-management-frontend-one-nu.vercel.app",
       code: "https://github.com/Mr-StrangerCoder/task-management-backend.git"
     },
     {
