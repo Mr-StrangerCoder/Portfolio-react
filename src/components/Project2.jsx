@@ -6,6 +6,7 @@ import img from '../assets/2.jpg'
 import img5 from '../assets/guessnumber.png'
 import img6 from '../assets/Task_management.png'
 import img7 from '../assets/poem.png'
+import img8 from '../assets/medicare.png'
 
 
 
@@ -37,12 +38,12 @@ const Project2 = () => {
       code: "https://github.com/Mr-StrangerCoder/poem-backend.git"
     },
     {
-      title: "Project Demo",
-      img: img,
-      desc: "Sample project description here.",
-      tech: "HTML, CSS",
-      live: "#",
-      code: "#"
+      title: "Medicare",
+      img: img8,
+      desc: "A patients book doctor appointments, doctors to manage their schedules, admins to oversee the entire platform.",
+      tech: "MongoDB, Redux, JWT, Bootstrap, Multer, Bcryptjs, Axios React,  Vercel, Render",
+      live: "https://doctor-frontend-ebon.vercel.app/",
+      code: "https://github.com/Mr-StrangerCoder/doctor_backend.git"
     }
   ]
 
